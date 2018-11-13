@@ -1,0 +1,3 @@
+# Color procedural file C:/Users/Spencer/Documents/Navigationbackup5-22-2018/Scenes/pratice with moving hot spot/Displacement to color.txt
+# 0 points
+# position R G B

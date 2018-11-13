@@ -1,0 +1,47 @@
+<PlusConfiguration version="2.1">
+
+  <DataCollection StartupDelaySec="1.0">
+    <DeviceSet Name="Neuronavigation boilerplate" Description="Sending transforms for 0: StylusToReference, 1: ApplicatorToReference 2: PositionerToReference, 3: StylusToApplicator, 4: StylusToPositioner via OpenIGTLink." />
+    <Device
+      Id="TrackerDevice"
+      Type="PolarisTracker"
+      SerialPort="3"
+      BaudRate="115200"
+      ToolReferenceFrame="Tracker"
+      TrackerInternalCoordinateSystemName="Reference">
+      <DataSources>
+      <DataSource Type="Tool" Id="Reference" BufferSize="500" RomFile="C:\Users\Spencer\Documents\Navigationbackup5-22-2018\Rom\head_tracker.rom" AveragedItemsForFiltering="20" />
+      <DataSource Type="Tool" Id="Applicator" BufferSize="500" RomFile="C:\Users\Spencer\Documents\Navigationbackup5-22-2018\Rom\applicator_tracker.rom" AveragedItemsForFiltering="20" />
+      <DataSource Type="Tool" Id="Stylus" RomFile="C:\Users\Spencer\Documents\Navigationbackup5-22-2018\Rom\pen.rom" BufferSize="150" />
+      </DataSources>
+      <OutputChannels>
+        <OutputChannel Id="TrackerStream">
+          <DataSource Id="Reference" />
+	  <DataSource Id="Positioner" />
+          <DataSource Id="Applicator" />
+          <DataSource Id="Stylus" />
+        </OutputChannel>
+      </OutputChannels>
+    </Device>
+  </DataCollection>
+
+  <PlusOpenIGTLinkServer
+    MaxNumberOfIgtlMessagesToSend="1"
+    MaxTimeSpentWithProcessingMs="50"
+    ListeningPort="18944"
+    SendValidTransformsOnly="true"
+    OutputChannelId="TrackerStream" >
+    <DefaultClientInfo>
+      <MessageTypes>
+        <Message Type="TRANSFORM" />
+      </MessageTypes>
+      <TransformNames>
+     <Transform Name="StylusToReference" />
+	   <Transform Name="ApplicatorToReference" />
+	   <Transform Name="StylusToApplicator" />
+	   <Transform Name="StylusToPositioner" />
+      </TransformNames>
+    </DefaultClientInfo>
+  </PlusOpenIGTLinkServer>
+
+</PlusConfiguration>

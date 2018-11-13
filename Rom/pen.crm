@@ -1,0 +1,84 @@
+--USER DESCRIPTION ------------------------
+[BasicCharParams]
+Classification=4
+CharMethod=0
+[Tool Parameters]
+Tool Manufacturer=1
+Tool Part Number=1
+Revision Number=0
+Tool Type=1
+SubType=3
+Markers=4
+FiringSeq=0001020300000000000000000000000000000000
+Number Faces=1
+Number Groups=1
+GroupMask=11110000000000000000
+FaceMask=0101010100000000000000000000000000000000
+SwitchFlag=09000000
+LEDs=31313131
+Marker Type=41
+Lock=0
+UG Tracking=1
+Wireless=0
+Max Marker Angle=90
+Min Number Markers=3
+Max 3D Error=2.0000000
+[Estimate]
+Markers=4
+P01=145.65,178.88,-859.97
+P02=180.34,132.62,-843.87
+P03=199.60,155.75,-820.48
+P04=223.41,154.60,-800.83
+
+--BUILD INFORMATION----------------------------
+[Build Parameters]
+Iterations=1
+Iteration01Overlay=1.0000000
+Iteration01Marker=1.0000000
+Abort on Error=TRUE
+Max Overlay Iterations=200
+Min Marker Views=1
+[Polaris]
+CommPort=3
+BaudRate=4
+Parity=0
+Handshake=1
+DataBits=8
+StopBits=1
+Revision=1.002
+SerialNumber=P6-00739
+[PostBuild]
+ToolPort=
+EndProgramSROM=0
+EndProgramUserSROM=0
+EndTest=1
+EndUGTest=1
+Pivot=0
+AlignmentDevice=0
+EndSave=1
+MoveToCentroid=1
+[Collection]
+Tracking Options=1
+Collection Units=0
+Collection Frames=300
+Delay=0
+Volume Selection=0
+Save Directory=C:\Users\Spencer\Desktop
+File Name=tms_pen
+Save Time=1
+Save PartNum=1
+File Format=1
+ToolPort=00
+[Polaris Tolerances]
+SegThres=0.450
+DotProductThres=200.000
+[Position Device Settings]
+DeviceDll=
+InputParameter=
+CollectionLocationCount=-453965252
+AutoContinuous=1000507522
+TrackDevice=1823141588
+ToolDefFile=
+ToolPort=
+[FileType]
+Description=tms_pen
