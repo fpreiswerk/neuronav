@@ -1,0 +1,99 @@
+--USER DESCRIPTION ------------------------
+[BasicCharParams]
+Classification=4
+CharMethod=0
+[Tool Parameters]
+Tool Manufacturer=Sentinel
+Tool Part Number=Reference Star Nr. 1
+Revision Number=0
+Tool Type=1
+SubType=3
+Markers=3
+FiringSeq=0001020000000000000000000000000000000000
+Number Faces=1
+Number Groups=1
+GroupMask=11100000000000000000
+FaceMask=0101010000000000000000000000000000000000
+SwitchFlag=09000000
+LEDs=31313131
+Marker Type=41
+Lock=1
+UG Tracking=1
+Wireless=0
+Max Marker Angle=90
+Min Number Markers=3
+Max 3D Error=2.0000000
+
+--TOOL ALIGNMENT AND NORMALS ------------------------
+[XfrmsAndNorms]
+NumOperations =1
+
+[Xfrm001]
+XfrmType	= 2
+N01	= -1.5435e-001f,-9.9972e-002f,9.8295e-001f
+N02	= -1.5435e-001f,-9.9972e-002f,9.8295e-001f
+N03	= -1.5435e-001f,-9.9972e-002f,9.8295e-001f
+F01	= -1.5435e-001f,-9.9972e-002f,9.8295e-001f
+
+[Xfrm Parameters]
+Abort On Error=TRUE
+Max Average RMS Error=2.0000000
+Max Iterations=100
+Max Coordinate Error=0.7500000
+Max Chi Square Error=2.0000000
+Pitch Accuracy=0.0000020
+Roll Accuracy=0.0000020
+Xt Accuracy=0.0020000
+Yaw Accuracy=0.0000020
+Yt Accuracy=0.0020000
+Zt Accuracy=0.0020000
+[Estimate]
+Markers=3
+P01=-57.18,-164.38,-767.37
+P02=-25.68,-126.49,-758.57
+P03=-16.24,-179.41,-762.47
+
+--BUILD INFORMATION----------------------------
+[Build Parameters]
+Iterations=1
+Iteration01Overlay=1.0000000
+Iteration01Marker=1.0000000
+Abort on Error=TRUE
+Max Overlay Iterations=200
+Min Marker Views=1
+[Polaris]
+CommPort=7
+BaudRate=5
+Parity=0
+Handshake=1
+DataBits=8
+StopBits=1
+Revision=1.002
+SerialNumber=P6-00739
+[PostBuild]
+ToolPort=
+EndProgramSROM=0
+EndProgramUserSROM=0
+EndTest=1
+EndUGTest=1
+Pivot=0
+AlignmentDevice=0
+EndSave=1
+MoveToCentroid=1
+[Collection]
+Tracking Options=0
+Collection Units=0
+Collection Frames=300
+Delay=0
+Volume Selection=0
+Save Directory=C:\ndigital
+File Name=ToolChar
+Save Time=1
+Save PartNum=1
+File Format=1
+ToolPort=00
+[Polaris Tolerances]
+SegThres=0.450
+DotProductThres=200.000
+[FileType]
+Description=
