@@ -2,6 +2,7 @@
 
 This is the code, data and documentation repository for our Arxiv preprint [Open-source neuronavigation for multimodal non-invasive brain stimulation using 3D Slicer" - arXiv preprint arXiv:1909.12458, 2019](https://arxiv.org/abs/1909.12458).
 
+The [manual](https://github.com/fpreiswerk/neuronav/blob/master/Manual.pdf) should help getting started.
 
 The aim of this work is to enable faster prototyping and experimentation in the non-invasive brain stimulation field, and to push it towards open and reproducible science. We hope you find this useful for your own research. If so, please consider citing the article:
 
